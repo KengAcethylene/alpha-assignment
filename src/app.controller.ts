@@ -11,8 +11,8 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('/getAddressValue:address')
-  getAddressValue(@Param() param: GetAddressValueDTO): string {
+  @Get('/getAddressValue/:address')
+  getAddressValue(@Param() param: GetAddressValueDTO): Promise<object> {
     return this.appService.getAddressValue(param.address);
   }
 }
