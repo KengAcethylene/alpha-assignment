@@ -42,7 +42,9 @@ export class AppService {
       const price = priceResponse.data.ethereum.usd;
       const priceInWei = BigNumber.from(result).div(1000).mul(price * 1000);
       const priceInUSD = formatEther(priceInWei);
-      return { usd: parseFloat(priceInUSD).toFixed(2) };
+      return {
+        usd: parseFloat(priceInUSD).toFixed(2)
+      };
     } catch (error) {
       throw new HttpException('Something went wrong.', error.response?.status || 400);
     }
