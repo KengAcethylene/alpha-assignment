@@ -44,7 +44,7 @@ export class AppService {
       const priceInUSD = formatEther(priceInWei);
       return { usd: parseFloat(priceInUSD).toFixed(2) };
     } catch (error) {
-      throw new HttpException('Something went wrong.', error.reponse.status || 400);
+      throw new HttpException('Something went wrong.', error.response?.status || 400);
     }
   }
 }

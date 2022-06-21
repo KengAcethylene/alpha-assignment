@@ -13,6 +13,6 @@ export class AppController {
 
   @Get('/getAddressValue/:address')
   getAddressValue(@Param() param: GetAddressValueDTO): Promise<object> {
-    return this.appService.getAddressValue(param.address);
+    return this.appService.getAddressValue(param.address.toLowerCase());
   }
 }

@@ -9,9 +9,9 @@ export function isETHAddress(validationOptions?: ValidationOptions) {
             propertyName: propertyName,
             options: validationOptions,
             validator: {
-                validate(value: any, args: ValidationArguments) {
+                validate(value: string, args: ValidationArguments) {
                     try {
-                        getAddress(value);
+                        getAddress(value.toLowerCase());
                         return true;
                     } catch (error) {
                         return false;
