@@ -26,7 +26,7 @@
     ```json
     {
       "statusCode": 400,
-      "message": "invalid address",
+      "message": ["invalid address"],
       "error": "Bad Request"
     }
     ```
