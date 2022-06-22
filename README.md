@@ -4,7 +4,7 @@
 
 ## How to use this API
 
-- create `.env` file. key based on `.env.example`
+- create `.env` file at the root of the project. key based on `.env.example`
 - install dependency with command
   ```sh
   yarn
