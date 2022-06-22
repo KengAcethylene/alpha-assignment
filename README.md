@@ -4,9 +4,15 @@
 
 ## How to use this API
 
-- create .env file. key based on .env.example
-- install dependency with command `yarn`
-- start server with command `yarn start:dev`
+- create `.env` file. key based on `.env.example`
+- install dependency with command
+  ```sh
+  yarn
+  ```
+- start server with command
+  ```sh
+  yarn start:dev
+  ```
 - use url `http://localhost:3000/getAddressValue/[ethaddress]` example `http://localhost:3000/getaddressValue/0x60B83824B040141dAe8695e8718131c075d0a0Ed`
 
   - if address is correct. the result will be status 200 with format
